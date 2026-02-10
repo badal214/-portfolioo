@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitish Kumar</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Nitish Kumar is a passionate web developer specializing in React.js and cloud technologies, dedicated to creating efficient, modern, and scalable applications.">
+    <!-- Meta Keywords for SEO -->
+    <meta name="keywords" content="Nitish Kumar, Frontend Developer, Cloud Engineer, React.js, Django, AWS, Portfolio, Web Developer, MCA Student">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link href="img/logo1.png" rel="shortcut icon" type="image/x-icon">
+    <style>
+        /* Color Scheme Switcher */
+        .color-scheme-switcher {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        .color-option {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .color-option:hover {
+            transform: scale(1.2);
+        }
+
+        .color-option.default {
+            background: linear-gradient(45deg, #99ff00, #00c6ff);
+        }
+
+        .color-option.teal {
+            background: linear-gradient(45deg, #64ffda, #00aaff);
+        }
+
+        .color-option.red {
+            background: linear-gradient(45deg, #e94560, #ff6b6b);
+        }
+        
+        /* Additional animations */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .home-img img {
+            animation: float 5s ease-in-out infinite;
+        }
+    </style>
+    <script>
+        (function() {
+            emailjs.init("WuyEaJqBQH8E3WC-R");
+        })();
+    </script>
+</head>
+<body>
+
+    <div class="color-scheme-switcher">
+        <div class="color-option default" title="Default Scheme"></div>
+        <div class="color-option teal" title="Teal Scheme"></div>
+        <div class="color-option red" title="Red Scheme"></div>
+    </div>
+
+    <header class="header">
+        <a href="#home" class="logo">Nitish
+            <span>Kumar</span>
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#services">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="pdf/NITISH_SHARMA RESUME.pdf" target="_blank">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Nitish</span></h1>
+            <h3 class="text-animation">
+  Aspiring <span></span>
+</h3>
+
+            <p> MCA graduate | Frontend Developer | React.js | JavaScript | Django REST | AWS </p>
+            <div class="social-icon">
+                <a href="http://www.linkedin.com/in/nitish-kumar23" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                <a href="mailto:nitishsharma1266@gmail.com"><i class='bx bx-envelope' ></i></a>
+                <a href="tel:7858992775"><i class='bx bx-phone'></i></a>
+            </div>
+            <a href="pdf/NITISH_SHARMA RESUME.pdf" target="_blank" class="btn">Download Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="img/nitish1.jpg" alt="Nitish Kumar">
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>Master of Computer Applications</h3>
+                    <p>Uttaranchal University, Premnagar, Dehradun</p>
+                    <p>Expected Graduation: March 2025</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Computer Applications</h3>
+                    <p>Patliputra University, Patna</p>
+                    <p>Percentage: 69%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                    <h3>Intermediate</h3>
+                    <p>SGDM College, Patna (BSEB)</p>
+                    <p>Percentage: 63.8%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2018</div>
+                <div class="timeline-content">
+                    <h3>Matriculation</h3>
+                    <p>Shivam Vidya Mandir (CBSE), Patna</p>
+                    <p>Percentage: 81%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Technical Skills</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Frontend Development</h4>
+                    <p>React.js, JavaScript, CSS, Bootstrap</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Backend Development</h4>
+                    <p>Python Django, Django REST Framework</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Database</h4>
+                    <p>MySQL, SQLite</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Cloud</h4>
+                    <p>AWS Basics (S3, EC2, IAM, Cloud Concepts)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-box">
+            <h2 class="heading">Projects</h2>
+            <div class="wrapper">
+                <div class="project-item">
+                    <h2>File Distribution Portal</h2>
+                    <p>Developed a web-based file distribution portal using HTML, CSS, JavaScript, and PHP backend. Implemented real-time database functionality for efficient document management.</p>
+                </div>
+                <div class="project-item">
+                    <h2>Glam Tech – Salon Onboarding Platform</h2>
+                    <p>Built a full-stack salon onboarding platform with separate signup flows for clients, stylists, and salon owners. Integrated React.js frontend with Django REST APIs and JWT authentication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span>Me</span></h2>
+        <form id="contact-form" action="">
+            <div class="input-group">
+                <div class="input-box">                
+                    <input name="from_name" type="text" placeholder="Full Name">
+                    <input name="email" type="email" placeholder="Email">                
+                </div>
+                <div class="input-box">
+                    <input name="user_number" type="tel" placeholder="Phone Number" pattern="[0-9]{10,15}" title="Please enter a 10-digit phone number" required />
+                    <input name="user_subject" type="text" placeholder="Subject">                
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="http://www.linkedin.com/in/nitish-kumar23" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <a href="mailto:helloworldbadal@gmail.com"><i class='bx bx-envelope' ></i></a>
+            <a href="tel:7858992775"><i class='bx bx-phone'></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#education">Education</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="pdf/NITISH_SHARMA RESUME.pdf" target="_blank">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">
+            © Nitish Kumar | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const serviceID = 'service_i8a1mmu';
+        const templateID = 'template_if077ln';
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                alert('Thank you for your message!');
+                document.getElementById('contact-form').reset();
+            }, (err) => {
+                alert('Oops! Something went wrong. Please try again later.');
+                console.error(err);
+            });
+    });
+    
+    // Color scheme switching functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const colorOptions = document.querySelectorAll('.color-option');
+        
+        colorOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const scheme = this.classList[1];
+                changeColorScheme(scheme);
+            });
+        });
+        
+        // Initialize animations
+        initAnimations();
+    });
+
+    function changeColorScheme(scheme) {
+        const root = document.documentElement;
+        
+        switch(scheme) {
+            case 'teal':
+                root.style.setProperty('--bg-color', '#0a192f');
+                root.style.setProperty('--second-bg-color', '#112240');
+                root.style.setProperty('--text-color', '#e6f1ff');
+                root.style.setProperty('--main-color', '#64ffda');
+                root.style.setProperty('--accent-color', '#8892b0');
+                root.style.setProperty('--gradient-start', '#64ffda');
+                root.style.setProperty('--gradient-end', '#00aaff');
+                root.style.setProperty('--card-bg', 'rgba(100, 255, 218, 0.05)');
+                break;
+            case 'red':
+                root.style.setProperty('--bg-color', '#1a1a2e');
+                root.style.setProperty('--second-bg-color', '#16213e');
+                root.style.setProperty('--text-color', '#ffffff');
+                root.style.setProperty('--main-color', '#e94560');
+                root.style.setProperty('--accent-color', '#0f3460');
+                root.style.setProperty('--gradient-start', '#e94560');
+                root.style.setProperty('--gradient-end', '#ff6b6b');
+                root.style.setProperty('--card-bg', 'rgba(233, 69, 96, 0.05)');
+                break;
+            default:
+                root.style.setProperty('--bg-color', '#080808');
+                root.style.setProperty('--second-bg-color', '#131313');
+                root.style.setProperty('--text-color', 'white');
+                root.style.setProperty('--main-color', 'rgb(153, 255, 0)');
+                root.style.setProperty('--accent-color', '#ff6b6b');
+                root.style.setProperty('--gradient-start', '#00c6ff');
+                root.style.setProperty('--gradient-end', '#0072ff');
+                root.style.setProperty('--card-bg', 'rgba(255, 255, 255, 0.05)');
+        }
+    }
+    
+    function initAnimations() {
+        // Add scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Observe timeline items
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            observer.observe(item);
+        });
+        
+        // Observe project items
+        document.querySelectorAll('.project-item').forEach(item => {
+            observer.observe(item);
+        });
+    }
+    </script>
+</body>
+</html>
